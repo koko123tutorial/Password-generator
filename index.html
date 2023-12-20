@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  </head>
+  <body style="background-color: rgb(0, 0, 0); margin-top: 6rem">
+    <h1 class="text-center text-light">Password Generator</h1>
+    <br />
+    <div class="text-center">
+      <input type="text" placeholder="Length Password" name="Length" id="Length" />
+    </div>
+
+    <div class="text-center grid gap-3">
+      <div class="p-2 g-col-6">
+        <label class="text-light" for="Symbol">Symbol</label>
+        <input type="checkbox" name="Symbol" id="Symbol" />
+      </div>
+      <div class="p-2 g-col-6">
+        <label class="text-light" for="Uppercase">Uppercase</label>
+        <input type="checkbox" name="Uppercase" id="Uppercase" />
+      </div>
+      <div class="p-2 g-col-6">
+        <label class="text-light" for="Lowercase">Lowercase Only</label>
+        <input type="checkbox" name="Lowercase" id="Lowercase" />
+      </div>
+      <div class="p-2 g-col-6">
+        <label class="text-light" for="Number">Number</label>
+        <input type="checkbox" name="Number" id="Number" />
+      </div>
+    </div>
+
+    <br />
+    <div class="text-center">
+      <button type="button" class="text-center btn btn-primary" onclick="getPassword()">Generate</button>
+    </div>
+    <br />
+    <br />
+    <div class="text-center">
+      <label class="text-light" for="Password">Result</label>
+      <br />
+      <input type="text" placeholder="Do not write in this box" name="Password" id="Password" />
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>
